@@ -71,7 +71,7 @@ topRight <- function () {
       # This function creates the top-right part of the plot, i.e. black time series of the Voltage variable
       # It does not call any constructor though, it just plots
       # First, it specifies some constants
-      x_axis_name <- "Date/Time"
+      x_axis_name <- "datetime"
       y_axis_name <- "Voltage"
       x_data <- hpc_data$Full_time
       y_data <- hpc_data$Voltage
@@ -86,8 +86,8 @@ bottomRight <- function() {
       # This function creates the top-right part of the plot, i.e. black time series of the Global reactive power variable
       # It does not call any constructor though, it just plots
       # First, it specifies some constants
-      x_axis_name <- "Date/Time"
-      y_axis_name <- "Global reactive power"
+      x_axis_name <- "datetime"
+      y_axis_name <- "Global_reactive_power"
       x_data <- hpc_data$Full_time
       y_data <- hpc_data$Global_reactive_power
       # Then it plots
