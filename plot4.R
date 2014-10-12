@@ -10,6 +10,12 @@ sourceReadDataR <- function() {
       # This function creates the data for this assignment in a data frame: hpc_data
       # It does it by sourcing another script in this repository: readData.R
       # You can read its description inside the readData.R file
+}      
+
+makePlot <- function() {
+      # This is a "global" plotting function
+      # It calls the constructor that is aimed to draw the four plots on one canvas
+      # Then it calls individual functions for each of the four plots.
       source("readData.R")
       png("plot4.png", width = 480, height = 480)
       par(mfcol=c(2,2))
@@ -18,12 +24,6 @@ sourceReadDataR <- function() {
       topRight()
       bottomRight()
       dev.off()
-}      
-
-makePlot <- function() {
-      # This is a "global" plotting function
-      # It calls the constructor that is aimed to draw the four plots on one canvas
-      # Then it calls individual functions for each of the four plots.
 }
 
 topLeft <- function () {
@@ -99,8 +99,8 @@ bottomRight <- function() {
 
 # ----SCRIPT----
 
-# The script consequently calls the two its functions:
-# First it reads the data, then it makes the plot
+# The script consequently calls two of its functions: sourceReadDataR and makePlot
+# Hence, it first it reads the data, then it makes the plot
 
 sourceReadDataR()
 makePlot()
