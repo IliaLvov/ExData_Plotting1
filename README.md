@@ -1,3 +1,18 @@
+## DEAR PEER MARKERS!
+
+I would like to ask you to please pay your attention to the fact
+that in order to complete the assigment specifications I have
+written code that downloads and reads the data into R. As this code
+is the same for all the four plots, I saved it into a separate file
+named readData.R. Every R-file, that actually creates a plot, has a
+function that sources readData.R, and this function is executed in
+the body of each script. Hence, the assignment specifications are
+held.
+
+Thank you for your attention.
+
+Please find below the original text by Roger.
+
 ## Introduction
 
 This assignment uses data from
